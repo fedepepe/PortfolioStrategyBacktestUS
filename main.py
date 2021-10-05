@@ -45,7 +45,7 @@ def main():
     return_df = return_df[return_df.columns.intersection(mktcap_df.columns)]
     real_vol_df = real_vol_df[real_vol_df.columns.intersection(mktcap_df.columns)]
 
-    mkt_idx_df, mkt_ret_df = pd.read_pickle('mkt_idx.pkl')
+    mkt_ret_df, mkt_idx_df = pd.read_pickle('mkt_idx.pkl')
 
     # %% Set parameters and initialize
     endow = 1e6  # Initial amount of money to be invested
